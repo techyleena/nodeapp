@@ -5,17 +5,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover tape \"test/*-test.js\"",
-    "lint": "eslint index.js",
-    "ci-test": "istanbul cover tape \"test/*-test.js\" > test.tap && istanbul report clover",
-    "ci-lint": "eslint -f checkstyle index.js > checkstyle-result.xml"
+    "lint": "./node_modules/.bin/eslint index.js",
+    "ci-test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/tape \"test/*-test.js\" > test.tap && ./node_modules/.bin/istanbul report clover",
+    "ci-lint": "./node_modules/.bin/eslint -f checkstyle index.js > checkstyle-result.xml",
+    "coverage": "./node_modules/.bin/istanbul cover test/*.js"
   },
   "keywords": [],
   "author": "Leena <techyleena@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^0.10.0",
-    "istanbul": "^0.3.2",
+    "istanbul": "^0.3.21",
+    "plato": "^1.5.0",
     "tape": "^3.0.3"
   }
 }
