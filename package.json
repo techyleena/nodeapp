@@ -15,7 +15,16 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^0.10.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-cov": "^0.4.0",
+    "grunt-mocha-istanbul": "^3.0.1",
     "istanbul": "^0.3.21",
+    "load-grunt-tasks": "^3.3.0",
+    "mocha": "^2.3.3",
+    "mocha-cobertura-reporter": "^1.0.4",
+    "mocha-jenkins-reporter": "^0.1.9",
     "plato": "^1.5.0",
     "tape": "^3.0.3"
   }
